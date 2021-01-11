@@ -7,6 +7,5 @@ node('DOTNETCORE'){
 	}
 	stage('push'){
 		echo 'Pushing....'
-		}
 	}
 }
