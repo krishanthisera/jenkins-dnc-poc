@@ -1,6 +1,6 @@
 node('DOTNETCORE'){
 	stage('SCM'){
-		checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/FeynmanFan/JenkinsDocker']]]);
+		checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/krishanthisera/jenkins-dnc-poc.git']]]);
 	}
 	stage('build'){
 		sh 'dotnet build ConsoleApp1'
